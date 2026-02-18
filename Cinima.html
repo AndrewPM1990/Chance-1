@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Great Magic Cauldron</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1b2a4e, #050914);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.container {
+  color: #f5d76e;
+  text-shadow: 0 0 10px #f5d76e, 0 0 25px #cfae70;
+}
+
+.line {
+  opacity: 0;
+  font-size: 2.6rem;
+  margin: 20px 0;
+  animation: fadeIn 2s forwards;
+}
+
+.line:nth-child(1) { animation-delay: 0s; }
+.line:nth-child(2) { animation-delay: 2s; }
+.line:nth-child(3) { animation-delay: 4s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="line">🪄 The Great Magic Cauldron has spoken!</div>
+  <div class="line">🎬 You have won Tickets to the Moving Pictures!</div>
+  <div class="line">🦉 Your Prize will be with you by EOwl shortly!</div>
+</div>
+</body>
+</html>
